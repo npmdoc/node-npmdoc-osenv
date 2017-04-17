@@ -1,0 +1,1010 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/npm/osenv#readme">osenv (v0.1.4)</a>
+</h1>
+<h4>Look up environment settings specific to different operating systems</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv">module osenv</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.editor">
+            function <span class="apidocSignatureSpan">osenv.</span>editor
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.home">
+            function <span class="apidocSignatureSpan">osenv.</span>home
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.hostname">
+            function <span class="apidocSignatureSpan">osenv.</span>hostname
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.path">
+            function <span class="apidocSignatureSpan">osenv.</span>path
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.prompt">
+            function <span class="apidocSignatureSpan">osenv.</span>prompt
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.shell">
+            function <span class="apidocSignatureSpan">osenv.</span>shell
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.tmpdir">
+            function <span class="apidocSignatureSpan">osenv.</span>tmpdir
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.user">
+            function <span class="apidocSignatureSpan">osenv.</span>user
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.editor">module osenv.editor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.editor.editor">
+            function <span class="apidocSignatureSpan">osenv.</span>editor
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.home">module osenv.home</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.home.home">
+            function <span class="apidocSignatureSpan">osenv.</span>home
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.hostname">module osenv.hostname</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.hostname.hostname">
+            function <span class="apidocSignatureSpan">osenv.</span>hostname
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.path">module osenv.path</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.path.path">
+            function <span class="apidocSignatureSpan">osenv.</span>path
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.prompt">module osenv.prompt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.prompt.prompt">
+            function <span class="apidocSignatureSpan">osenv.</span>prompt
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.shell">module osenv.shell</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.shell.shell">
+            function <span class="apidocSignatureSpan">osenv.</span>shell
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.tmpdir">module osenv.tmpdir</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.tmpdir.tmpdir">
+            function <span class="apidocSignatureSpan">osenv.</span>tmpdir
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.osenv.user">module osenv.user</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.osenv.user.user">
+            function <span class="apidocSignatureSpan">osenv.</span>user
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv" id="apidoc.module.osenv">module osenv</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.editor" id="apidoc.element.osenv.editor">
+        function <span class="apidocSignatureSpan">osenv.</span>editor
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">editor = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+No place like it.
+
+## osenv.path()
+
+An array of the places that the operating system will search for
+executables.
+
+## osenv.<span class="apidocCodeKeywordSpan">editor</span>()
+
+Return the executable name of the editor program.  This uses the EDITOR
+and VISUAL environment variables, and falls back to `vi` on Unix, or
+`notepad.exe` on Windows.
+
+## osenv.shell()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.home" id="apidoc.element.osenv.home">
+        function <span class="apidocSignatureSpan">osenv.</span>home
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">home = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Either PS1 on unix, or PROMPT on Windows.
+
+## osenv.tmpdir()
+
+The place where temporary files should be created.
+
+## osenv.<span class="apidocCodeKeywordSpan">home</span>()
+
+No place like it.
+
+## osenv.path()
+
+An array of the places that the operating system will search for
+executables.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.hostname" id="apidoc.element.osenv.hostname">
+        function <span class="apidocSignatureSpan">osenv.</span>hostname
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hostname = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var osenv = require('osenv')
+var path = osenv.path()
+var user = osenv.user()
+// etc.
+
+// Some things are not reliably in the env, and have a fallback command:
+var h = osenv.<span class="apidocCodeKeywordSpan">hostname</span>(function (er, hostname) {
+  h = hostname
+})
+// This will still cause it to be memoized, so calling osenv.hostname()
+// is now an immediate operation.
+
+// You can always send a cb, which will get called in the nextTick
+// if it's been memoized, or wait for the fallback data if it wasn't
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.path" id="apidoc.element.osenv.path">
+        function <span class="apidocSignatureSpan">osenv.</span>path
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Look up environment settings specific to different operating systems.
+
+## Usage
+
+```javascript
+var osenv = require('osenv')
+var path = osenv.<span class="apidocCodeKeywordSpan">path</span>()
+var user = osenv.user()
+// etc.
+
+// Some things are not reliably in the env, and have a fallback command:
+var h = osenv.hostname(function (er, hostname) {
+  h = hostname
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.prompt" id="apidoc.element.osenv.prompt">
+        function <span class="apidocSignatureSpan">osenv.</span>prompt
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prompt = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The machine name.  Calls `hostname` if not found.
+
+## osenv.user()
+
+The currently logged-in user.  Calls `whoami` if not found.
+
+## osenv.<span class="apidocCodeKeywordSpan">prompt</span>()
+
+Either PS1 on unix, or PROMPT on Windows.
+
+## osenv.tmpdir()
+
+The place where temporary files should be created.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.shell" id="apidoc.element.osenv.shell">
+        function <span class="apidocSignatureSpan">osenv.</span>shell
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shell = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## osenv.editor()
+
+Return the executable name of the editor program.  This uses the EDITOR
+and VISUAL environment variables, and falls back to `vi` on Unix, or
+`notepad.exe` on Windows.
+
+## osenv.<span class="apidocCodeKeywordSpan">shell</span>()
+
+The SHELL on Unix, which Windows calls the ComSpec.  Defaults to 'bash'
+or 'cmd'.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.tmpdir" id="apidoc.element.osenv.tmpdir">
+        function <span class="apidocSignatureSpan">osenv.</span>tmpdir
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tmpdir = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The currently logged-in user.  Calls `whoami` if not found.
+
+## osenv.prompt()
+
+Either PS1 on unix, or PROMPT on Windows.
+
+## osenv.<span class="apidocCodeKeywordSpan">tmpdir</span>()
+
+The place where temporary files should be created.
+
+## osenv.home()
+
+No place like it.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.user" id="apidoc.element.osenv.user">
+        function <span class="apidocSignatureSpan">osenv.</span>user
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">user = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Look up environment settings specific to different operating systems.
+
+## Usage
+
+```javascript
+var osenv = require('osenv')
+var path = osenv.path()
+var user = osenv.<span class="apidocCodeKeywordSpan">user</span>()
+// etc.
+
+// Some things are not reliably in the env, and have a fallback command:
+var h = osenv.hostname(function (er, hostname) {
+  h = hostname
+})
+// This will still cause it to be memoized, so calling osenv.hostname()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.editor" id="apidoc.module.osenv.editor">module osenv.editor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.editor.editor" id="apidoc.element.osenv.editor.editor">
+        function <span class="apidocSignatureSpan">osenv.</span>editor
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">editor = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+No place like it.
+
+## osenv.path()
+
+An array of the places that the operating system will search for
+executables.
+
+## osenv.<span class="apidocCodeKeywordSpan">editor</span>()
+
+Return the executable name of the editor program.  This uses the EDITOR
+and VISUAL environment variables, and falls back to `vi` on Unix, or
+`notepad.exe` on Windows.
+
+## osenv.shell()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.home" id="apidoc.module.osenv.home">module osenv.home</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.home.home" id="apidoc.element.osenv.home.home">
+        function <span class="apidocSignatureSpan">osenv.</span>home
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">home = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Either PS1 on unix, or PROMPT on Windows.
+
+## osenv.tmpdir()
+
+The place where temporary files should be created.
+
+## osenv.<span class="apidocCodeKeywordSpan">home</span>()
+
+No place like it.
+
+## osenv.path()
+
+An array of the places that the operating system will search for
+executables.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.hostname" id="apidoc.module.osenv.hostname">module osenv.hostname</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.hostname.hostname" id="apidoc.element.osenv.hostname.hostname">
+        function <span class="apidocSignatureSpan">osenv.</span>hostname
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hostname = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var osenv = require('osenv')
+var path = osenv.path()
+var user = osenv.user()
+// etc.
+
+// Some things are not reliably in the env, and have a fallback command:
+var h = osenv.<span class="apidocCodeKeywordSpan">hostname</span>(function (er, hostname) {
+  h = hostname
+})
+// This will still cause it to be memoized, so calling osenv.hostname()
+// is now an immediate operation.
+
+// You can always send a cb, which will get called in the nextTick
+// if it's been memoized, or wait for the fallback data if it wasn't
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.path" id="apidoc.module.osenv.path">module osenv.path</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.path.path" id="apidoc.element.osenv.path.path">
+        function <span class="apidocSignatureSpan">osenv.</span>path
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Look up environment settings specific to different operating systems.
+
+## Usage
+
+```javascript
+var osenv = require('osenv')
+var path = osenv.<span class="apidocCodeKeywordSpan">path</span>()
+var user = osenv.user()
+// etc.
+
+// Some things are not reliably in the env, and have a fallback command:
+var h = osenv.hostname(function (er, hostname) {
+  h = hostname
+})
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.prompt" id="apidoc.module.osenv.prompt">module osenv.prompt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.prompt.prompt" id="apidoc.element.osenv.prompt.prompt">
+        function <span class="apidocSignatureSpan">osenv.</span>prompt
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prompt = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The machine name.  Calls `hostname` if not found.
+
+## osenv.user()
+
+The currently logged-in user.  Calls `whoami` if not found.
+
+## osenv.<span class="apidocCodeKeywordSpan">prompt</span>()
+
+Either PS1 on unix, or PROMPT on Windows.
+
+## osenv.tmpdir()
+
+The place where temporary files should be created.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.shell" id="apidoc.module.osenv.shell">module osenv.shell</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.shell.shell" id="apidoc.element.osenv.shell.shell">
+        function <span class="apidocSignatureSpan">osenv.</span>shell
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shell = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## osenv.editor()
+
+Return the executable name of the editor program.  This uses the EDITOR
+and VISUAL environment variables, and falls back to `vi` on Unix, or
+`notepad.exe` on Windows.
+
+## osenv.<span class="apidocCodeKeywordSpan">shell</span>()
+
+The SHELL on Unix, which Windows calls the ComSpec.  Defaults to 'bash'
+or 'cmd'.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.tmpdir" id="apidoc.module.osenv.tmpdir">module osenv.tmpdir</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.tmpdir.tmpdir" id="apidoc.element.osenv.tmpdir.tmpdir">
+        function <span class="apidocSignatureSpan">osenv.</span>tmpdir
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tmpdir = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The currently logged-in user.  Calls `whoami` if not found.
+
+## osenv.prompt()
+
+Either PS1 on unix, or PROMPT on Windows.
+
+## osenv.<span class="apidocCodeKeywordSpan">tmpdir</span>()
+
+The place where temporary files should be created.
+
+## osenv.home()
+
+No place like it.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.osenv.user" id="apidoc.module.osenv.user">module osenv.user</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.osenv.user.user" id="apidoc.element.osenv.user.user">
+        function <span class="apidocSignatureSpan">osenv.</span>user
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">user = function (cb) {
+  var val = lookup()
+  if (!val &amp;&amp; !fell &amp;&amp; !falling &amp;&amp; fallback) {
+    fell = true
+    falling = true
+    exec(fallback, function (er, output, stderr) {
+      falling = false
+      if (er) return // oh well, we tried
+      val = output.trim()
+    })
+  }
+  exports[key] = function (cb) {
+    if (cb) process.nextTick(cb.bind(null, null, val))
+    return val
+  }
+  if (cb &amp;&amp; !falling) process.nextTick(cb.bind(null, null, val))
+  return val
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Look up environment settings specific to different operating systems.
+
+## Usage
+
+```javascript
+var osenv = require('osenv')
+var path = osenv.path()
+var user = osenv.<span class="apidocCodeKeywordSpan">user</span>()
+// etc.
+
+// Some things are not reliably in the env, and have a fallback command:
+var h = osenv.hostname(function (er, hostname) {
+  h = hostname
+})
+// This will still cause it to be memoized, so calling osenv.hostname()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
