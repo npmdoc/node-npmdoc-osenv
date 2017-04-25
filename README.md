@@ -1,6 +1,6 @@
 # npmdoc-osenv
 
-#### api documentation for  [osenv (v0.1.4)](https://github.com/npm/osenv#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-osenv.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-osenv) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-osenv.svg)](https://travis-ci.org/npmdoc/node-npmdoc-osenv)
+#### basic api documentation for  [osenv (v0.1.4)](https://github.com/npm/osenv#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-osenv.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-osenv) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-osenv.svg)](https://travis-ci.org/npmdoc/node-npmdoc-osenv)
 
 #### Look up environment settings specific to different operating systems
 
@@ -79,7 +79,8 @@
     "scripts": {
         "test": "tap test/*.js"
     },
-    "version": "0.1.4"
+    "version": "0.1.4",
+    "bin": {}
 }
 ```
 
